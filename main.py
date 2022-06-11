@@ -6,10 +6,8 @@ while True:
     possible_selection = ['R', 'P', 'S']
     CPU = random.choice(possible_selection)
     print(f"\n Player ({Player.upper()})  : CPU ({CPU})")
-    if (Player.upper() == 'R' and CPU == 'R'
-        or Player.upper() == 'P' and CPU == 'P'
-            or Player.upper() == 'S' and CPU == 'S'):
-        print("Its a tie ")
+    if (Player.upper() == CPU):
+        print("It's a tie ")
         continue
     elif (Player.upper() == 'R' and CPU == 'S'
           or Player.upper() == 'P' and CPU == 'R'
